@@ -17,7 +17,6 @@ public class BanGiaoDTO
     {
 
     }
-
     public BanGiaoDTO(string maCa1, string maCa2, int tienBanGiao, int tienHeThong, string maNhanVien1, string maNhanVien2, DateTime thoiGianBanGiao, bool tonTai)
     {
         MaCa11 = maCa1;
@@ -38,4 +37,19 @@ public class BanGiaoDTO
     public string MaNhanVien21 { get => MaNhanVien2; set => MaNhanVien2 = value; }
     public DateTime ThoiGianBanGiao1 { get => ThoiGianBanGiao; set => ThoiGianBanGiao = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma ca 1:{MaCa1}");
+        Console.WriteLine($"Ma ca 2:{MaCa2}");
+        Console.WriteLine($"So tien duoc ban giao:{TienBanGiao}");
+        Console.WriteLine($"So tien tren he thong:{TienHeThong}");
+        Console.WriteLine($"Ma nhan vien ca 1 :{MaNhanVien1}");
+        Console.WriteLine($"Ma nhan vien ca 2 :{MaNhanVien2}");
+        Console.WriteLine($"Thoi gian ban giao ca :{ThoiGianBanGiao}");
+    }
+    // public static void Main(string[] args)
+    // {
+    //     BanGiaoDTO bg = new BanGiaoDTO("123","124",50,45,"1","2",DateTime.Now,true);
+    //     bg.Display();
+    // }
+    
 }
