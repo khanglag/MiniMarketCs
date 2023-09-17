@@ -29,4 +29,12 @@ public class PhieuXuatDTO{
     public int SoLuong1 { get => SoLuong; set => SoLuong = value; }
     public string LyDo1 { get => LyDo; set => LyDo = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma phieu xuat :{MaPhieuXuat}");
+        Console.WriteLine($"Ma nhan vien :{MaNhanVien}");
+        Console.WriteLine($"Ngay tao phieu :{NgayTaoPhieu}");
+        Console.WriteLine($"Ma hang xuat :{MaHangXuat}");
+        Console.WriteLine($"So luong :{SoLuong}");
+        Console.WriteLine($"Ly do :{LyDo}");
+    }
 }

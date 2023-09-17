@@ -28,6 +28,12 @@ public class NhaCungCapDTO
     public string SDT1 { get => SDT; set => SDT = value; }
     public string DiaChi1 { get => DiaChi; set => DiaChi = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma nha cung cap :{MaNhaCungCap}");
+        Console.WriteLine($"Ten nha cung cap :{TenNhaCungCap}");
+        Console.WriteLine($"So dien thoai :{SDT}");
+        Console.WriteLine($"Dia chi :{DiaChi}");
+    }
 }
 public class Test
 {

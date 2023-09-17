@@ -22,4 +22,9 @@ public class CaLamViecDTO
     public DateTime ThoiGianBatDau1 { get => ThoiGianBatDau; set => ThoiGianBatDau = value; }
     public DateTime ThoiGianKetThuc1 { get => ThoiGianKetThuc; set => ThoiGianKetThuc = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma ca :{MaCa}");
+        Console.WriteLine($"Thoi gian bat dau :{ThoiGianBatDau}");
+        Console.WriteLine($"Thoi gian ket thuc:{ThoiGianKetThuc}");
+    }
 }

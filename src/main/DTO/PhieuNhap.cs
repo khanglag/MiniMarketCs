@@ -40,4 +40,15 @@ public class PhieuNhapDTO
     public int VAT1 { get => VAT; set => VAT = value; }
     public int TongTien1 { get => TongTien; set => TongTien = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma phieu nhap :{MaPhieuNhap}");
+        Console.WriteLine($"Ma nhan vien :{MaNhanVien}");
+        Console.WriteLine($"Ma hang nhap :{MaHangNhap}");
+        Console.WriteLine($"Ten hang nhap :{TenHangNhap}");
+        Console.WriteLine($"Ma nha cung cap :{MaNhaCungCap}");
+        Console.WriteLine($"Thoi gian nhap :{ThoiGianNhap}");
+        Console.WriteLine($"So luong :{SoLuong}");
+        Console.WriteLine($"VAT :{VAT}");
+        Console.WriteLine($"Tong tien :{TongTien}");    
+    }
 }

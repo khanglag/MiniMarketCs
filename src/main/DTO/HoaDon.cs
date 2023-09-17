@@ -40,4 +40,15 @@ public class HoaDonDTO
     public int TienKhachDua1 { get => TienKhachDua; set => TienKhachDua = value; }
     public int TienTraKhach1 { get => TienTraKhach; set => TienTraKhach = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"So hoa don :{SoHoaDon}");
+        Console.WriteLine($"Ma nhan vien :{MaNhanVien}");
+        Console.WriteLine($"Thoi gian lap hoa don :{ThoiGianLap}");
+        Console.WriteLine($"Ma khach hang :{MaKhachHang}");
+        Console.WriteLine($"Tong hoa don:{TongHoaDon}");
+        Console.WriteLine($"Chiet khau :{ChietKhau}");
+        Console.WriteLine($"Thanh toan :{ThanhToan}");
+        Console.WriteLine($"Tien khach dua :{TienKhachDua}");
+        Console.WriteLine($"Tien tra khach :{TienTraKhach}");
+    }
 }

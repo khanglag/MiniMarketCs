@@ -17,4 +17,8 @@ public class PhanQuyenDTO {
     public string MaQuyen1 { get => MaQuyen; set => MaQuyen = value; }
     public string TenQuyen1 { get => TenQuyen; set => TenQuyen = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma quyen :{MaQuyen}");
+        Console.WriteLine($"Ten quyen:{TenQuyen}");
+    }
 }

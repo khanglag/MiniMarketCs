@@ -47,4 +47,17 @@ public class HangHoaDTO
     public int SoLuong1 { get => SoLuong; set => SoLuong = value; }
     public string XuatXu1 { get => XuatXu; set => XuatXu = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma san pham :{MaSanPham}");
+        Console.WriteLine($"Ten san pham :{TenSanPham}");
+        Console.WriteLine($"Ma nhom san pham :{MaNhomSanPham}");
+        Console.WriteLine($"Ngay san xuat :{NgaySanXuat}");
+        Console.WriteLine($"Han su dung :{HanSuDung}");
+        Console.WriteLine($"Nha cung cap:{NhaCungCap}");
+        Console.WriteLine($"Don vi :{DonVi}");
+        Console.WriteLine($"Gia nhap :{GiaNhap}");
+        Console.WriteLine($"Gia ban :{GiaBan}");
+        Console.WriteLine($"So luong :{SoLuong}");
+        Console.WriteLine($"Xuat xu :{XuatXu}");
+    }
 }

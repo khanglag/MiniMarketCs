@@ -23,4 +23,11 @@ public class PhanCaDTO {
     public int SoGio1 { get => SoGio; set => SoGio = value; }
     public DateOnly NgayLam1 { get => NgayLam; set => NgayLam = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma ca lam viec :{MaCa}");
+        Console.WriteLine($"Ma nhan vien:{MaNhanVien}");
+        Console.WriteLine($"So gio lam :{SoGio}");
+        Console.WriteLine($"Ngay lam :{NgayLam}");
+        
+    }
 }

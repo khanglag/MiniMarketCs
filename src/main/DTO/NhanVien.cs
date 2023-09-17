@@ -50,4 +50,18 @@ public class NhanVienDTO
     public DateOnly NgayNghiViec1 { get => NgayNghiViec; set => NgayNghiViec = value; }
     public int HeSoLuong1 { get => HeSoLuong; set => HeSoLuong = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public void Display() {
+        Console.WriteLine($"Ma nhan vien :{MaNhanVien}");
+        Console.WriteLine($"Ten nhan nhan vien :{TenNhanVien}");
+        Console.WriteLine($"Ngay sinh :{NgaySinh}");
+        Console.WriteLine($"Gioi tinh :{GioiTinh}");
+        Console.WriteLine($"So can cuoc cong dan :{CCCD}");
+        Console.WriteLine($"So dien thoai :{SDT}");
+        Console.WriteLine($"Email :{Email}");
+        Console.WriteLine($"Dia chi :{DiaChi}");
+        Console.WriteLine($"Ma quyen :{MaQuyen}");
+        Console.WriteLine($"Ngay bat dau lam viec :{NgayBatDau}");
+        Console.WriteLine($"Ngay nghi viec :{NgayNghiViec}");
+        Console.WriteLine($"He so luong :{HeSoLuong}");
+    }
 }

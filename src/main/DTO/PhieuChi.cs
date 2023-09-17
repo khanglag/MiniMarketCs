@@ -1,6 +1,6 @@
 using System;
 public class PhieuChiDTO {
-    private string MaPhieuNhap;
+    private string MaPhieuChi;
     private string MaNhanVien;
     private DateTime NgayChi;
     private int SoTien;
@@ -11,9 +11,9 @@ public class PhieuChiDTO {
         
     }
 
-    public PhieuChiDTO(string maPhieuNhap, string maNhanVien, DateTime ngayChi, int soTien, string lyDo, string ghiChu, bool tonTai)
+    public PhieuChiDTO(string maPhieuChi, string maNhanVien, DateTime ngayChi, int soTien, string lyDo, string ghiChu, bool tonTai)
     {
-        MaPhieuNhap1 = maPhieuNhap;
+        MaPhieuChi1 = maPhieuChi;
         MaNhanVien1 = maNhanVien;
         NgayChi1 = ngayChi;
         SoTien1 = soTien;
@@ -22,11 +22,20 @@ public class PhieuChiDTO {
         TonTai1 = tonTai;
     }
 
-    public string MaPhieuNhap1 { get => MaPhieuNhap; set => MaPhieuNhap = value; }
+    public string MaPhieuChi1 { get => MaPhieuChi; set => MaPhieuChi = value; }
     public string MaNhanVien1 { get => MaNhanVien; set => MaNhanVien = value; }
     public DateTime NgayChi1 { get => NgayChi; set => NgayChi = value; }
     public int SoTien1 { get => SoTien; set => SoTien = value; }
     public string LyDo1 { get => LyDo; set => LyDo = value; }
     public string GhiChu1 { get => GhiChu; set => GhiChu = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+
+    public void Display() {
+        Console.WriteLine($"Ma phieu chi :{MaPhieuChi}");
+        Console.WriteLine($"Ma nhan vien :{MaNhanVien}");
+        Console.WriteLine($"Ngay chi :{NgayChi}");
+        Console.WriteLine($"So tien chi :{SoTien}");
+        Console.WriteLine($"Ly do chi :{LyDo}");
+        Console.WriteLine($"Ghi chu :{GhiChu}");
+    }
 }
