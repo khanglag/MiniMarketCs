@@ -1,3 +1,4 @@
+using Internal;
 using System;
 public class HoaDonDTO
 {

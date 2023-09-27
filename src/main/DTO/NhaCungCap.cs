@@ -14,20 +14,18 @@ public class NhaCungCapDTO
 
     }
 
-    public NhaCungCapDTO(string maNhaCungCap, string tenNhaCungCap, string sDT, string diaChi, bool tonTai)
+    public NhaCungCapDTO(string MaNhaCungCap, string TenNhaCungCap,string SDT, string DiaChi, bool TonTai)
     {
-        MaNhaCungCap1 = maNhaCungCap;
-        TenNhaCungCap1 = tenNhaCungCap;
-        SDT1 = sDT;
-        DiaChi1 = diaChi;
-        TonTai1 = tonTai;
+       this.MaNhaCungCap = MaNhaCungCap;
+       this.TenNhaCungCap = TenNhaCungCap;
+       this.SDT = SDT;
+       this.DiaChi = DiaChi;
     }
 
-    public string MaNhaCungCap1 { get => MaNhaCungCap; set => MaNhaCungCap = value; }
-    public string TenNhaCungCap1 { get => TenNhaCungCap; set => TenNhaCungCap = value; }
-    public string SDT1 { get => SDT; set => SDT = value; }
-    public string DiaChi1 { get => DiaChi; set => DiaChi = value; }
-    public bool TonTai1 { get => TonTai; set => TonTai = value; }
+    public string MaNhaCungCap {get; set;}
+    public string TenNhaCungCap {get; set;}
+    public string SDT {get; set;}
+    public string DiaChi {get;set;}
     public void Display() {
         Console.WriteLine($"Ma nha cung cap :{MaNhaCungCap}");
         Console.WriteLine($"Ten nha cung cap :{TenNhaCungCap}");
