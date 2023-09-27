@@ -14,25 +14,26 @@ public class NhaCungCapDTO
 
     }
 
-    public NhaCungCapDTO(string MaNhaCungCap, string TenNhaCungCap,string SDT, string DiaChi, bool TonTai)
+    public NhaCungCapDTO(string maNhaCungCap, string tenNhaCungCap, string sDT, string diaChi, bool tonTai)
     {
-       this.MaNhaCungCap = MaNhaCungCap;
-       this.TenNhaCungCap = TenNhaCungCap;
-       this.SDT = SDT;
-       this.DiaChi = DiaChi;
-       this.TonTai = TonTai;
+        MaNhaCungCap1 = maNhaCungCap;
+        TenNhaCungCap1 = tenNhaCungCap;
+        SDT1 = sDT;
+        DiaChi1 = diaChi;
+        TonTai1 = tonTai;
     }
 
-    public string MaNhaCungCap {get; set;}
-    public string TenNhaCungCap {get; set;}
-    public string SDT {get; set;}
-    public string DiaChi {get;set;}
-    public bool TonTai {get; set;}
+    public string MaNhaCungCap1 { get => MaNhaCungCap; set => MaNhaCungCap = value; }
+    public string TenNhaCungCap1 { get => TenNhaCungCap; set => TenNhaCungCap = value; }
+    public string SDT1 { get => SDT; set => SDT = value; }
+    public string DiaChi1 { get => DiaChi; set => DiaChi = value; }
+    public bool TonTai1 { get => TonTai; set => TonTai = value; }
+
     public void Display() {
-        Console.WriteLine($"Ma nha cung cap :{MaNhaCungCap}");
-        Console.WriteLine($"Ten nha cung cap :{TenNhaCungCap}");
-        Console.WriteLine($"So dien thoai :{SDT}");
-        Console.WriteLine($"Dia chi :{DiaChi}");
+        Console.WriteLine($"Ma nha cung cap :{MaNhaCungCap1}");
+        Console.WriteLine($"Ten nha cung cap :{TenNhaCungCap1}");
+        Console.WriteLine($"So dien thoai :{SDT1}");
+        Console.WriteLine($"Dia chi :{DiaChi1}");
     }
 }
 public class Test

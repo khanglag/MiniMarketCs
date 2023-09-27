@@ -1,55 +1,42 @@
-using Internal;
 using System;
-public class HoaDonDTO
-{
-    private int SoHoaDon;
+public class PhieuChiDTO {
+    private string MaPhieuChi;
+    private int SoTien;
     private string MaNhanVien;
-    private DateTime ThoiGianLap;
-    private string MaKhachHang;
-    private int TongHoaDon;
-    private int ChietKhau;
-    private int ThanhToan;
-    private int TienKhachDua;
-    private int TienTraKhach;
+    private DateTime ThoiGianChi;
+    
+    private string LyDo;
+    private string GhiChu;
     private bool TonTai;
-    public HoaDonDTO()
-    {
-
+    public PhieuChiDTO() {
+        
     }
 
-    public HoaDonDTO(int soHoaDon, string maNhanVien, DateTime thoiGianLap, string maKhachHang, int tongHoaDon, int chietKhau, int thanhToan, int tienKhachDua, int tienTraKhach, bool tonTai)
+    public PhieuChiDTO(string maPhieuChi, int soTien, string maNhanVien, DateTime thoiGianChi, string lyDo, string ghiChu, bool tonTai)
     {
-        SoHoaDon1 = soHoaDon;
+        MaPhieuChi1 = maPhieuChi;
+        SoTien1 = soTien;
         MaNhanVien1 = maNhanVien;
-        ThoiGianLap1 = thoiGianLap;
-        MaKhachHang1 = maKhachHang;
-        TongHoaDon1 = tongHoaDon;
-        ChietKhau1 = chietKhau;
-        ThanhToan1 = thanhToan;
-        TienKhachDua1 = tienKhachDua;
-        TienTraKhach1 = tienTraKhach;
+        ThoiGianChi1 = thoiGianChi;
+        LyDo1 = lyDo;
+        GhiChu1 = ghiChu;
         TonTai1 = tonTai;
     }
 
-    public int SoHoaDon1 { get => SoHoaDon; set => SoHoaDon = value; }
+    public string MaPhieuChi1 { get => MaPhieuChi; set => MaPhieuChi = value; }
+    public int SoTien1 { get => SoTien; set => SoTien = value; }
     public string MaNhanVien1 { get => MaNhanVien; set => MaNhanVien = value; }
-    public DateTime ThoiGianLap1 { get => ThoiGianLap; set => ThoiGianLap = value; }
-    public string MaKhachHang1 { get => MaKhachHang; set => MaKhachHang = value; }
-    public int TongHoaDon1 { get => TongHoaDon; set => TongHoaDon = value; }
-    public int ChietKhau1 { get => ChietKhau; set => ChietKhau = value; }
-    public int ThanhToan1 { get => ThanhToan; set => ThanhToan = value; }
-    public int TienKhachDua1 { get => TienKhachDua; set => TienKhachDua = value; }
-    public int TienTraKhach1 { get => TienTraKhach; set => TienTraKhach = value; }
+    public DateTime ThoiGianChi1 { get => ThoiGianChi; set => ThoiGianChi = value; }
+    public string LyDo1 { get => LyDo; set => LyDo = value; }
+    public string GhiChu1 { get => GhiChu; set => GhiChu = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+
     public void Display() {
-        Console.WriteLine($"So hoa don :{SoHoaDon}");
-        Console.WriteLine($"Ma nhan vien :{MaNhanVien}");
-        Console.WriteLine($"Thoi gian lap hoa don :{ThoiGianLap}");
-        Console.WriteLine($"Ma khach hang :{MaKhachHang}");
-        Console.WriteLine($"Tong hoa don:{TongHoaDon}");
-        Console.WriteLine($"Chiet khau :{ChietKhau}");
-        Console.WriteLine($"Thanh toan :{ThanhToan}");
-        Console.WriteLine($"Tien khach dua :{TienKhachDua}");
-        Console.WriteLine($"Tien tra khach :{TienTraKhach}");
+        Console.WriteLine($"Ma phieu chi :{MaPhieuChi1}");
+        Console.WriteLine($"Ma nhan vien :{MaNhanVien1}");
+        Console.WriteLine($"Thoi gian chi :{ThoiGianChi1}");
+        Console.WriteLine($"So tien chi :{SoTien1}");
+        Console.WriteLine($"Ly do chi :{LyDo1}");
+        Console.WriteLine($"Ghi chu :{GhiChu1}");
     }
 }

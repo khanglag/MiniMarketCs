@@ -50,18 +50,19 @@ public class NhanVienDTO
     public DateOnly NgayNghiViec1 { get => NgayNghiViec; set => NgayNghiViec = value; }
     public int HeSoLuong1 { get => HeSoLuong; set => HeSoLuong = value; }
     public bool TonTai1 { get => TonTai; set => TonTai = value; }
+
     public void Display() {
-        Console.WriteLine($"Ma nhan vien :{MaNhanVien}");
-        Console.WriteLine($"Ten nhan nhan vien :{TenNhanVien}");
-        Console.WriteLine($"Ngay sinh :{NgaySinh}");
-        Console.WriteLine($"Gioi tinh :{GioiTinh}");
-        Console.WriteLine($"So can cuoc cong dan :{CCCD}");
-        Console.WriteLine($"So dien thoai :{SDT}");
-        Console.WriteLine($"Email :{Email}");
-        Console.WriteLine($"Dia chi :{DiaChi}");
-        Console.WriteLine($"Ma quyen :{MaQuyen}");
-        Console.WriteLine($"Ngay bat dau lam viec :{NgayBatDau}");
-        Console.WriteLine($"Ngay nghi viec :{NgayNghiViec}");
-        Console.WriteLine($"He so luong :{HeSoLuong}");
+        Console.WriteLine($"Ma nhan vien :{MaNhanVien1}");
+        Console.WriteLine($"Ten nhan nhan vien :{TenNhanVien1}");
+        Console.WriteLine($"Ngay sinh :{NgaySinh1}");
+        Console.WriteLine($"Gioi tinh :{GioiTinh1}");
+        Console.WriteLine($"So can cuoc cong dan :{CCCD1}");
+        Console.WriteLine($"So dien thoai :{SDT1}");
+        Console.WriteLine($"Email :{Email1}");
+        Console.WriteLine($"Dia chi :{DiaChi1}");
+        Console.WriteLine($"Ma quyen :{MaQuyen1}");
+        Console.WriteLine($"Ngay bat dau lam viec :{NgayBatDau1}");
+        Console.WriteLine($"Ngay nghi viec :{NgayNghiViec1}");
+        Console.WriteLine($"He so luong :{HeSoLuong1}");
     }
 }

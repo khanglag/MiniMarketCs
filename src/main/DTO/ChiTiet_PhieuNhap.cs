@@ -14,37 +14,40 @@ public class ChiTiet_PhieuNhapDTO
     {
 
     }
-    public ChiTiet_PhieuNhapDTO(string MaPhieuNhap, string MaHangNhap, string TenHangNhap, double VAT, int SoLuong, string DonVi, int GiaNhap, int TongTienNhap, bool TonTai)
+
+    public ChiTiet_PhieuNhapDTO(string maPhieuNhap, string maHangNhap, string tenHangNhap, double vAT, int soLuong, string donVi, int giaNhap, int tongTienNhap, bool tonTai)
     {
-        this.MaPhieuNhap = MaPhieuNhap;
-        this.MaHangNhap = MaHangNhap;
-        this.TenHangNhap = TenHangNhap;
-        this.VAT = VAT;
-        this.SoLuong = SoLuong;
-        this.DonVi = DonVi;
-        this.GiaNhap = GiaNhap;
-        this.TongTienNhap = TongTienNhap;
-        this.TonTai = TonTai;
+        MaPhieuNhap1 = maPhieuNhap;
+        MaHangNhap1 = maHangNhap;
+        TenHangNhap1 = tenHangNhap;
+        VAT1 = vAT;
+        SoLuong1 = soLuong;
+        DonVi1 = donVi;
+        GiaNhap1 = giaNhap;
+        TongTienNhap1 = tongTienNhap;
+        TonTai1 = tonTai;
     }
-    public string MaPhieuNhap { get; set; }
-    public string MaHangNhap { get; set; }
-    public string TenHangNhap { get; set; }
-    public double VAT { get; set; }
-    public int SoLuong { get; set; }
-    public string Doni { get; set; }
-    public int GiaNhap { get; set; }
-    public int TongTienNhap { get; set; }
-    public bool TonTai { get; set; }
+
+    public string MaPhieuNhap1 { get => MaPhieuNhap; set => MaPhieuNhap = value; }
+    public string MaHangNhap1 { get => MaHangNhap; set => MaHangNhap = value; }
+    public string TenHangNhap1 { get => TenHangNhap; set => TenHangNhap = value; }
+    public double VAT1 { get => VAT; set => VAT = value; }
+    public int SoLuong1 { get => SoLuong; set => SoLuong = value; }
+    public string DonVi1 { get => DonVi; set => DonVi = value; }
+    public int GiaNhap1 { get => GiaNhap; set => GiaNhap = value; }
+    public int TongTienNhap1 { get => TongTienNhap; set => TongTienNhap = value; }
+    public bool TonTai1 { get => TonTai; set => TonTai = value; }
+
     public void Display()
     {
-        Console.WriteLine($"Ma phieu nhap :{MaPhieuNhap}");
-        Console.WriteLine($"Ma hang nhap :{MaHangNhap}");
-        Console.WriteLine($"Ten hang nhap :{TenHang Nhap}");
-        Console.WriteLine($"VAT :{VAT}");
-        Console.WriteLine($"So luong:{SoLuong}");
-        Console.WriteLine($"Don vi :{DonVi}");
-        Console.WriteLine($"Gia nhap :{GiaNhap}");
-        Console.WriteLine($"Tong tien nhap :{TongTienNhap}");
+        Console.WriteLine($"Ma phieu nhap :{MaPhieuNhap1}");
+        Console.WriteLine($"Ma hang nhap :{MaHangNhap1}");
+        Console.WriteLine($"Ten hang nhap :{TenHangNhap1}");
+        Console.WriteLine($"VAT :{VAT1}");
+        Console.WriteLine($"So luong:{SoLuong1}");
+        Console.WriteLine($"Don vi :{DonVi1}");
+        Console.WriteLine($"Gia nhap :{GiaNhap1}");
+        Console.WriteLine($"Tong tien nhap :{TongTienNhap1}");
     }
 
 }
